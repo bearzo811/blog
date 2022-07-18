@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-TW">
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
@@ -12,7 +12,7 @@
 
 <link rel="stylesheet" href="/blog/css/main.css">
 
-
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@300&family=Roboto+Condensed:wght@700&display=swap/css?family=Noto Sans Traditional Chinese:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
 <link rel="stylesheet" href="/blog/lib/font-awesome/css/all.min.css">
 
 <script id="hexo-configurations">
@@ -26,7 +26,7 @@
 <meta property="og:url" content="https://bearzo811.github.io/blog/index.html">
 <meta property="og:site_name" content="Bearz&#39;s Blog">
 <meta property="og:description" content="This is Bearz&#39;s Blog">
-<meta property="og:locale" content="en_US">
+<meta property="og:locale" content="zh_TW">
 <meta property="article:author" content="Bearz">
 <meta name="twitter:card" content="summary">
 
@@ -39,7 +39,7 @@
     sidebar: "",
     isHome : true,
     isPost : false,
-    lang   : 'en'
+    lang   : 'zh-TW'
   };
 </script>
 
@@ -83,7 +83,7 @@
     <header class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-container">
   <div class="site-nav-toggle">
-    <div class="toggle" aria-label="Toggle navigation bar">
+    <div class="toggle" aria-label="切換導航欄">
       <span class="toggle-line toggle-line-first"></span>
       <span class="toggle-line toggle-line-middle"></span>
       <span class="toggle-line toggle-line-last"></span>
@@ -112,12 +112,22 @@
   <ul id="menu" class="main-menu menu">
         <li class="menu-item menu-item-home">
 
-    <a href="/blog/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+    <a href="/blog/" rel="section"><i class="fa fa-home fa-fw"></i>首頁</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/blog/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>標籤</a>
 
   </li>
         <li class="menu-item menu-item-categories">
 
-    <a href="/blog/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a>
+    <a href="/blog/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分類</a>
+
+  </li>
+        <li class="menu-item menu-item-back-to-bearz's-website">
+
+    <a href="https://bearzo811.github.io/" rel="section"><i class="fa fa-th fa-fw"></i>Back To Bearz's Website</a>
 
   </li>
   </ul>
@@ -146,7 +156,217 @@
       
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="https://bearzo811.github.io/blog/2022/07/18/dev-log-blog-1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/blog/images/avatar.gif">
+      <meta itemprop="name" content="Bearz">
+      <meta itemprop="description" content="This is Bearz's Blog">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Bearz's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/blog/2022/07/18/dev-log-blog-1/" class="post-title-link" itemprop="url">《開發日誌》Bearz's Website & BLog - 1</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">發表於</span>
+              
+
+              <time title="創建時間：2022-07-18 17:58:00 / 修改時間：19:22:20" itemprop="dateCreated datePublished" datetime="2022-07-18T17:58:00+08:00">2022-07-18</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分類於</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/blog/categories/%E9%96%8B%E7%99%BC%E6%97%A5%E8%AA%8C/" itemprop="url" rel="index"><span itemprop="name">開發日誌</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <ul>
+<li><h3 id="Why"><a href="#Why" class="headerlink" title="Why"></a>Why</h3><p>透過架設這個網站練習：</p>
+<ul>
+<li>前端技術(HTML,CSS,JavaScript)</li>
+<li>將靜態網頁佈署在 GitHub Page</li>
+<li>Hexo 的應用</li>
+</ul>
+<p>此篇文章將會記錄整個實作過程及遇到的問題。</p>
+</li>
+<li><h3 id="What"><a href="#What" class="headerlink" title="What"></a>What</h3><p>實作中遇到的問題：</p>
+<ul>
+<li><p>如何將靜態網頁佈署至 Github Page 上</p>
+</li>
+<li><p>如何用同一個 Github 帳戶架設兩個 Github Page</p>
+</li>
+<li><p>如何使用 Hexo 架設 Blog</p>
+<br></li>
+</ul>
+<p>如何解決：</p>
+<ul>
+<li>因為不是邏輯性問題，只是還不熟悉這項技術，所以只需要閱讀大量網路文章即可解決。</li>
+</ul>
+</li>
+<li><h3 id="Tools"><a href="#Tools" class="headerlink" title="Tools"></a>Tools</h3><ul>
+<li>HTML5</li>
+<li>CSS</li>
+<li>JavaScript</li>
+<li>Hexo</li>
+</ul>
+</li>
+<li><h3 id="How"><a href="#How" class="headerlink" title="How"></a>How</h3><p><font style="background: rgb(255,241,167)">Bearz’s Website 的開發</font><br>前端的基礎技術在 Udemy 的網頁開發課學習得相當完善了，因此在這一階段沒遇到什麼太大的問題，只花了一個下午的時間就將這個網頁寫好了。<br>另外提一下，當初 UI 是用 Figma 畫的，好險有新學到這項技能，不然我可能得用 PPT 來畫了。</p>
+<p><img src="https://i.imgur.com/fFLtxSO.png" style="width: 800px; height:500px"></img><br><font style="background: rgb(255,241,167)">將 Bearz’s Website 佈署至 Github Webpage</font><br>本來以為這是有點複雜的技術，沒想到其實超級簡單的。</p>
+<ol>
+<li>先在 Github 新增一個新的 repo，名字格式為: username.github.io</li>
+<li>將整個靜態網頁的資料夾 Push 進這個 repo</li>
+<li>即可在 <a target="_blank" rel="noopener" href="https://username.github.io/">https://username.github.io/</a> 看到自己的靜態網頁了<br><br></li>
+</ol>
+<p><font style="background: rgb(255,241,167)">使用 Hexo 架設 Blog</font></p>
+<ul>
+<li><p>如何安裝 Hexo<br>※需先在電腦中安裝 Node.js 跟 Git<br>在 cmd 執行：<code>npm install -g hexo-cli</code></p>
+</li>
+<li><p>如何透過 Hexo 架設 Blog<br>在 cmd 執行:<br><code>hexo init &lt;blog_name&gt;</code><br><code>cd &lt;blog_name&gt;</code><br><code>npm install</code><br><code>hexo generate</code><br><code>hexo server</code><br>即可在 <a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000/</a> 看到架好的 Blog</p>
+</li>
+<li><p>如何更改 Hexo Theme<br>選擇想更改的 Theme 樣式，我使用的是許多人使用的 Next。<br>先去<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next">Next 的 Github</a>將 repo clone 下來放進 blog 資料夾的 themes 中，<br>並修改主目錄中的_config.yml 內的<code>theme: landscape</code>改為<code>theme: next</code>，<br>即可更改 Hexo Theme。</p>
+</li>
+</ul>
+<p><font style="background: rgb(255,241,167)">將用 Hexo 架好的 Blog 佈署至 Github project page</font><br>這階段是我遇到最多問題的地方，因為同一個 Github 帳號只能有一個.github.io 的網頁，但我想再開一個 Github Page 佈署這個 Blog，該怎麼做呢？<br>在網路找了很多方法，但都沒有成功解決，最後發現了 Github project page 這個東西，它只需要在一個新的 repo 中，更改 setting 中的 page 設定就可以另開一個新的 Github page 了。<br><img src="https://i.imgur.com/igcb8F3.png"></p>
+<p>而 Hexo 佈署網頁到 Github Page 有更方便的做法，需要先<br><code>npm install hexo-deployer-git --save</code><br>在修改主目錄的_config.yml 中，<br><img src="https://i.imgur.com/w0xZ8jM.png"><br><img src="https://i.imgur.com/IUYStsP.png"><br>bearzo811 可以替換成自己的 username，blog 可以替換成新開的 repo name<br>即可在 <a target="_blank" rel="noopener" href="https://username.github.io/repo_name/">https://username.github.io/repo_name/</a> 看到佈署在 Github Page 的 Blog。</p>
+</li>
+<li><h3 id="Learn"><a href="#Learn" class="headerlink" title="Learn"></a>Learn</h3><p>經過這次的開發，學習到：</p>
+<ul>
+<li>Github Page 的使用</li>
+<li>Hexo 框架的應用</li>
+<li>同一個 Github 帳戶設立兩個 Github Page<br><br></li>
+</ul>
+<p>這次的開發不算太難，花了差不多兩天就完成了，一天寫 Bearz’s Website+佈署上 Github Page，第二天則是用 Hexo 架設 Blog 並佈署上另一個 Github Page 並將它們串連。<br>我將它當作暖身操，順便練習寫一篇開發日誌，之後就可以開始進行 Flutter 的應用開發了。</p>
+</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="https://bearzo811.github.io/blog/2022/07/18/dev-log-format/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/blog/images/avatar.gif">
+      <meta itemprop="name" content="Bearz">
+      <meta itemprop="description" content="This is Bearz's Blog">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Bearz's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/blog/2022/07/18/dev-log-format/" class="post-title-link" itemprop="url">《開發日誌》Log Format</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">發表於</span>
+              
+
+              <time title="創建時間：2022-07-18 17:00:00 / 修改時間：19:22:55" itemprop="dateCreated datePublished" datetime="2022-07-18T17:00:00+08:00">2022-07-18</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分類於</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/blog/categories/%E9%96%8B%E7%99%BC%E6%97%A5%E8%AA%8C/" itemprop="url" rel="index"><span itemprop="name">開發日誌</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>這篇文章用來制定將來開發日誌的文章格式。</p>
+<p>最近看到 <a target="_blank" rel="noopener" href="https://www.yourator.co/">Yourator</a>上的一篇<a target="_blank" rel="noopener" href="https://www.yourator.co/articles/292">文章</a>，內文提到求職萬用公式<br/></p>
+<blockquote>
+<p>求職萬用公式＝ 拿到題目 &gt; 理解並消化 &gt; 開始實作 &gt; 完成成品 &gt; 解釋作法（向面試官解釋）</p>
+</blockquote>
+<p>獲得很大的啟發，因此希望之後的開發日誌都可以遵照這個脈絡來記錄。</p>
+<ul>
+<li><p>Why: <u>定義&#x2F;描述</u>這次遇到的問題；或者描述撰寫該篇日誌的<u>原因</u>。</p>
+</li>
+<li><p>What: 此次問題的癥結點為何，該<u>如何</u>解決；或者描述該<u>如何</u>開發這項作品。</p>
+</li>
+<li><p>Tools: 此次開發會運用到什麼<u>技術&#x2F;工具</u>。</p>
+</li>
+<li><p>How: 關於實作的<u>過程</u>紀錄。</p>
+</li>
+<li><p>Learn: 這次開發<u>學習</u>到了什麼或心得。</p>
+</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
     <link itemprop="mainEntityOfPage" href="https://bearzo811.github.io/blog/2022/07/18/about-this-blog/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -169,18 +389,18 @@
               <span class="post-meta-item-icon">
                 <i class="far fa-calendar"></i>
               </span>
-              <span class="post-meta-item-text">Posted on</span>
+              <span class="post-meta-item-text">發表於</span>
               
 
-              <time title="Created: 2022-07-18 16:47:00 / Modified: 16:52:06" itemprop="dateCreated datePublished" datetime="2022-07-18T16:47:00+08:00">2022-07-18</time>
+              <time title="創建時間：2022-07-18 16:47:00 / 修改時間：19:23:29" itemprop="dateCreated datePublished" datetime="2022-07-18T16:47:00+08:00">2022-07-18</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
               </span>
-              <span class="post-meta-item-text">In</span>
+              <span class="post-meta-item-text">分類於</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/blog/categories/%E5%BF%83%E5%BE%97/" itemprop="url" rel="index"><span itemprop="name">心得</span></a>
+                  <a href="/blog/categories/%E5%85%B6%E5%AE%83/" itemprop="url" rel="index"><span itemprop="name">其它</span></a>
                 </span>
             </span>
 
@@ -255,10 +475,10 @@
 
       <ul class="sidebar-nav motion-element">
         <li class="sidebar-nav-toc">
-          Table of Contents
+          文章目錄
         </li>
         <li class="sidebar-nav-overview">
-          Overview
+          本站概要
         </li>
       </ul>
 
@@ -276,18 +496,35 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/blog/archives">
-          <span class="site-state-item-count">1</span>
-          <span class="site-state-item-name">posts</span>
+          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-name">文章</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/blog/categories/">
           
-        <span class="site-state-item-count">1</span>
-        <span class="site-state-item-name">categories</span></a>
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">分類</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/blog/tags/">
+          
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">標籤</span></a>
       </div>
   </nav>
 </div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/bearzo811" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;bearzo811" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:bearz0811@gmail.com" title="E-Mail → mailto:bearz0811@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.facebook.com/profile.php?id=100003031983334" title="FB Page → https:&#x2F;&#x2F;www.facebook.com&#x2F;profile.php?id&#x3D;100003031983334" rel="noopener" target="_blank"><i class="fab fa-facebook fa-fw"></i>FB Page</a>
+      </span>
+  </div>
 
 
 
