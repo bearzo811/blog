@@ -20,19 +20,20 @@
     var CONFIG = {"hostname":"bearzo811.github.io","root":"/blog/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="這篇文章用來制定將來開發日誌的文章格式。">
+  <meta name="description" content="This is Bearz&#39;s Blog">
 <meta property="og:type" content="article">
-<meta property="og:title" content="《開發日誌》Log Format">
-<meta property="og:url" content="https://bearzo811.github.io/blog/2022/07/18/dev-log-format/index.html">
+<meta property="og:title" content="《學習日誌》Kotlin-1">
+<meta property="og:url" content="https://bearzo811.github.io/blog/2022/07/20/learn-log-kotlin-1/index.html">
 <meta property="og:site_name" content="Bearz&#39;s Blog">
-<meta property="og:description" content="這篇文章用來制定將來開發日誌的文章格式。">
+<meta property="og:description" content="This is Bearz&#39;s Blog">
 <meta property="og:locale" content="zh_TW">
-<meta property="article:published_time" content="2022-07-18T09:00:00.000Z">
-<meta property="article:modified_time" content="2022-07-20T06:48:42.527Z">
+<meta property="article:published_time" content="2022-07-19T16:00:00.000Z">
+<meta property="article:modified_time" content="2022-07-20T06:50:55.977Z">
 <meta property="article:author" content="Bearz">
+<meta property="article:tag" content="Kotlin">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://bearzo811.github.io/blog/2022/07/18/dev-log-format/">
+<link rel="canonical" href="https://bearzo811.github.io/blog/2022/07/20/learn-log-kotlin-1/">
 
 
 <script id="page-configurations">
@@ -45,7 +46,7 @@
   };
 </script>
 
-  <title>《開發日誌》Log Format | Bearz's Blog</title>
+  <title>《學習日誌》Kotlin-1 | Bearz's Blog</title>
   
 
 
@@ -160,7 +161,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
-    <link itemprop="mainEntityOfPage" href="https://bearzo811.github.io/blog/2022/07/18/dev-log-format/">
+    <link itemprop="mainEntityOfPage" href="https://bearzo811.github.io/blog/2022/07/20/learn-log-kotlin-1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/blog/images/avatar.gif">
@@ -173,7 +174,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          《開發日誌》Log Format
+          《學習日誌》Kotlin-1
         </h1>
 
         <div class="post-meta">
@@ -182,23 +183,17 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">發表於</span>
+              
 
-              <time title="創建時間：2022-07-18 17:00:00" itemprop="dateCreated datePublished" datetime="2022-07-18T17:00:00+08:00">2022-07-18</time>
+              <time title="創建時間：2022-07-20 00:00:00 / 修改時間：14:50:55" itemprop="dateCreated datePublished" datetime="2022-07-20T00:00:00+08:00">2022-07-20</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新於</span>
-                <time title="修改時間：2022-07-20 14:48:42" itemprop="dateModified" datetime="2022-07-20T14:48:42+08:00">2022-07-20</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">分類於</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/blog/categories/%E3%80%8A%E9%96%8B%E7%99%BC%E6%97%A5%E8%AA%8C%E3%80%8BLog-Format/" itemprop="url" rel="index"><span itemprop="name">《開發日誌》Log Format</span></a>
+                  <a href="/blog/categories/%E3%80%8A%E5%AD%B8%E7%BF%92%E6%97%A5%E8%AA%8C%E3%80%8BKotlin/" itemprop="url" rel="index"><span itemprop="name">《學習日誌》Kotlin</span></a>
                 </span>
             </span>
 
@@ -213,27 +208,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>這篇文章用來制定將來開發日誌的文章格式。</p>
-  <span id="more"></span>
-
-<p>最近看到 <a target="_blank" rel="noopener" href="https://www.yourator.co/">Yourator</a>上的一篇<a target="_blank" rel="noopener" href="https://www.yourator.co/articles/292">文章</a>，內文提到求職萬用公式<br/></p>
-<blockquote>
-<p>求職萬用公式＝ 拿到題目 &gt; 理解並消化 &gt; 開始實作 &gt; 完成成品 &gt; 解釋作法（向面試官解釋）</p>
-</blockquote>
-<p>獲得很大的啟發，因此希望之後的開發日誌都可以遵照這個脈絡來記錄。</p>
-<ul>
-<li><p>Why: <u>定義&#x2F;描述</u>這次遇到的問題；或者描述撰寫該篇日誌的<u>原因</u>。</p>
-</li>
-<li><p>What: 此次問題的癥結點為何，該<u>如何</u>解決；或者描述該<u>如何</u>開發這項作品。</p>
-</li>
-<li><p>Tools: 此次開發會運用到什麼<u>技術&#x2F;工具</u>。</p>
-</li>
-<li><p>How: 關於實作的<u>過程</u>紀錄。</p>
-</li>
-<li><p>Learn: 這次開發<u>學習</u>到了什麼或心得。</p>
-</li>
-</ul>
-
+        
     </div>
 
     
@@ -241,6 +216,9 @@
     
 
       <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/blog/tags/Kotlin/" rel="tag"># Kotlin</a>
+          </div>
 
         
 
@@ -248,12 +226,12 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/blog/2022/07/18/other-about-this-blog/" rel="prev" title="關於">
-      <i class="fa fa-chevron-left"></i> 關於
+    <a href="/blog/2022/07/18/dev-log-blog-1/" rel="prev" title="《開發日誌》Bearz's Website & Blog">
+      <i class="fa fa-chevron-left"></i> 《開發日誌》Bearz's Website & Blog
     </a></div>
       <div class="post-nav-item">
-    <a href="/blog/2022/07/18/dev-log-blog-1/" rel="next" title="《開發日誌》Bearz's Website & Blog">
-      《開發日誌》Bearz's Website & Blog <i class="fa fa-chevron-right"></i>
+    <a href="/blog/2022/07/20/other-choose/" rel="next" title="規劃">
+      規劃 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
